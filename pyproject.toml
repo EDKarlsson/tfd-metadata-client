@@ -1,24 +1,31 @@
 [project]
 name = "tfd_metadata_client"
 version = "1.0.0"
-description = "The First Descendant API"
+description = "The First Descendant Metadata API Client"
 authors = [
-  {name = "help_openapi@nexon.co.kr",email = "team@openapitools.org"},
+  { name = "help_openapi@nexon.co.kr", email = "team@openapitools.org" },
+  { name = "Dan Karlsson" },
 ]
-license = "NoLicense"
 readme = "README.md"
-keywords = ["OpenAPI", "OpenAPI-Generator", "The First Descendant API"]
+license = { file = "LICENSE" }
+keywords = [
+  "OpenAPI",
+  "OpenAPI-Generator",
+  "The First Descendant API",
+  "TFD Metadata",
+  "TFD API Client"
+]
 requires-python = ">=3.9"
 
 dependencies = [
   "urllib3 (>=2.1.0,<3.0.0)",
   "python-dateutil (>=2.8.2)",
   "pydantic (>=2)",
-  "typing-extensions (>=4.7.1)"
+  "typing-extensions (>=4.7.1)",
 ]
 
 [project.urls]
-Repository = "https://github.com/GIT_USER_ID/GIT_REPO_ID"
+Repository = "https://github.com/edkarlsson/tfd-metadata-client"
 
 [tool.poetry]
 requires-poetry = ">=2.0"
@@ -78,9 +85,7 @@ disallow_any_generics = true
 #warn_return_any = true
 
 [[tool.mypy.overrides]]
-module = [
-  "tfd_metadata_client.configuration",
-]
+module = ["tfd_metadata_client.configuration"]
 warn_unused_ignores = true
 strict_equality = true
 extra_checks = true
