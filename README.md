@@ -20,10 +20,10 @@ Python 3.9+
 If the python package is hosted on a repository, you can install directly using:
 
 ```sh
-pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
+pip install git+https://github.com/edkarlsson/tfd-metadata-client.git
 ```
 
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/edkarlsson/tfd-metadata-client.git`)
 
 Then import the package:
 
@@ -86,7 +86,7 @@ with tfd_metadata_client.ApiClient(configuration) as api_client:
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *<https://open.api.nexon.com>*
+All URIs are relative to *<https://open.api.nexon.com>* and API web interface is *<https://openapi.nexon.com/game/tfd>*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
